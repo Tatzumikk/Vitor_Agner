@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container color-mode-container">
+        <h2>Login</h2>
+        <form action="login.html" method="post">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Entrar">
+        </form>
+        
+        <p>Não tem uma conta? <a href="cadastro.html">Registre-se</a></p>
+
+        <button id="toggleModeButton">Trocar Modo</button>
+
+        <div id="counterSection">
+            <p id="modeToggleClickCounter">Clique no botão de alterar modo: 0 vezes</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
